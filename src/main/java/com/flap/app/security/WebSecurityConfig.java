@@ -27,6 +27,7 @@ public class WebSecurityConfig {
     private static final String[] WHITE_LIST_URL = {
             "/api/users/login",
             "/api/users/add",
+            "/h2-console/**"
 
 
     };
@@ -67,6 +68,8 @@ public class WebSecurityConfig {
         http
                 .cors(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
+                .headers(AbstractHttpConfigurer::disable)
+
                 .exceptionHandling((exception) -> exception.authenticationEntryPoint(unauthorizedHandler).accessDeniedHandler(accessDeniedHandler()))
                 .authorizeHttpRequests(req ->
                         req.requestMatchers(WHITE_LIST_URL)

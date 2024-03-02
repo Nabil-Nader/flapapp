@@ -44,7 +44,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         String userId;
         Set<String> role;
 
-        if (requestUrl.contains("/api/users" + "/login") || requestUrl.contains("/api/users/add")) {
+        if (requestUrl.contains("/api/users" + "/login") || requestUrl.contains("/api/users/add") || requestUrl.contains("/h2-console")) {
             filterChain.doFilter(req, res);
         } else {
             try {
