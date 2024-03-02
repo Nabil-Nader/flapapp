@@ -21,22 +21,22 @@ This is simple follow for challenge according to pdf
 We also added a sql script so each time it will load some user data like buyer and seller and some product into database
 keep in mind that all user have the same password which is```pass123 ```
 
-#Installation
+# Installation
 This is a simple spring boot app, we will need to hava Java installation on your machine then just run the app
 #To Run
 
-##Option 1
+## Option 1
 you can go into folder /src/main/java/ 
 then go int this class 'FlapKapApplication' and run it
 
-##Option2
+## Option2
 use this command if you have mvn install
 
 ```mvn spring-boot:run```
 
-#Feature
+# Feature
 App with build with jwt token and role based security 
 
-#Endpoint 
+# Endpoint 
 this is a simple postman collaction with some of the endpoint
 ``` https://documenter.getpostman.com/view/31760171/2sA2xb6axP```
