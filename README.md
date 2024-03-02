@@ -37,3 +37,6 @@ use this command if you have mvn install
 #Feature
 App with build with jwt token and role based security 
 
+#Endpoint 
+this is a simple postman collaction with some of the endpoint
+``` https://documenter.getpostman.com/view/31760171/2sA2xb6axP```
