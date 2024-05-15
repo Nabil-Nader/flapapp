@@ -78,6 +78,13 @@ public class UserServiceImple implements UserService{
 
     }
 
+    /*
+        find user validete user ,
+        validate money
+        add money to user ,
+        send queure 
+     */
+
     @Override
     public BuyerInformationDto depositMoney(BuyerInformationDto dto,Long userId) {
         Optional<User> optional = userRepository.findById(userId);
